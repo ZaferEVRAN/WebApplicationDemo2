@@ -1,7 +1,17 @@
 ﻿
 @{
     ViewBag.Title = "Index2";
+    List<string> Kayıtlar = new List<string>();
+    string kayit = "deneme";
+    Kayıtlar.Add("kayit1");
+    Kayıtlar.Add("kayit2");
 }
 
+
 <h2>Index2</h2>
+@foreach (var item in Kayıtlar)
+{
+<button> @item</button>
+}
+
 
