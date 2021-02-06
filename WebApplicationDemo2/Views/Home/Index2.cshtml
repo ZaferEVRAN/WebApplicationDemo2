@@ -5,13 +5,26 @@
     string kayit = "deneme";
     Kayıtlar.Add("kayit1");
     Kayıtlar.Add("kayit2");
+    void Ekle()
+    {
+        Kayıtlar.Add("onur");
+    }
+
 }
+
 
 
 <h2>Index2</h2>
 @foreach (var item in Kayıtlar)
 {
-<button> @item</button>
+    <button> @item</button>
 }
+<button onclick="Ekle()"> Banatıkla</button>
+@foreach (var item in Kayıtlar)
+{
+    <button> @item</button>
+}
+
+
 
 
